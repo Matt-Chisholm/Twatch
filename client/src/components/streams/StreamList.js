@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { fetchStreams } from '../../actions';
 import React, { Component } from 'react';
 import streams from '../../apis/streams';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 
 
 class StreamList extends Component {
@@ -73,4 +73,4 @@ const mapStateToProps = (state) => {
 };
 
 
-export default connect(mapStateToProps, { fetchStreams })(StreamList);
+export default withRouter(connect(mapStateToProps, { fetchStreams })(StreamList));

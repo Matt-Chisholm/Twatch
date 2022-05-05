@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import GoogleAuth from './streams/GoogleAuth';
 
-export default function Header() {
+export default withRouter(function Header() {
   return (
     <div className='ui secondary pointing menu'>
         <Link to='/' className='item'>
@@ -16,4 +16,4 @@ export default function Header() {
         </div>
     </div>
   )
-}
+});

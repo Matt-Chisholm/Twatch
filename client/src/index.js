@@ -10,11 +10,12 @@ import reduxThunk from 'redux-thunk';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(reducers, composeEnhancers(applyMiddleware(reduxThunk)));
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+
+ReactDOM.render(
   <Provider store={store} >
   <React.StrictMode>
     <App />
   </React.StrictMode>
-  </Provider>
+  </Provider>, 
+  document.getElementById("root")
 );
