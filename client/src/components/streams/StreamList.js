@@ -30,7 +30,7 @@ class StreamList extends Component {
           <div className='content'>
             {stream.title}
             <div className='description'>
-              {streams.description}
+              {stream.description}
             </div>
           </div>
         </div>
