@@ -10,7 +10,7 @@ class StreamEdit extends React.Component {
     fetchStream(this.props.match.params.id);
   }
 
-  onSubmit = () => {
+  onSubmit = (formValues) => {
     console.log(formValues);
   };
 
