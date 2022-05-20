@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
 import { fetchStreams } from '../../actions';
 import React, { Component } from 'react';
-import streams from '../../apis/streams';
 import { Link, withRouter } from 'react-router-dom';
 
 
